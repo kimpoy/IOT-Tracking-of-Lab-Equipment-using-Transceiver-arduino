@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="home.html"
+        >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">ADMIN</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+        <div class="sidebar-heading">Interface</div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Components</span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="buttons.html">Buttons</a>
+              <a class="collapse-item" href="cards.html">Cards</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span
+                    id="display-name"
+                    class="mr-2 d-none d-lg-inline text-gray-600 small"
+                  ></span>
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/undraw_profile.svg"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                    id="signoutbutton"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Earnings (Monthly)
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          $40,000
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                          Earnings (Annual)
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          $215,000
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                        >
+                          Tasks
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                            >
+                              50%
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="progress progress-sm mr-2">
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 50%"
+                                aria-valuenow="50"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i
+                          class="fas fa-clipboard-list fa-2x text-gray-300"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pending Requests Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
+                        >
+                          Pending Requests
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          18
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-comments fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <!-- DataTales Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary mb-2">
+                    DataTables Example
+                  </h6>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    data-whatever="@mdo"
+                    onclick="save_page()"
+                  >
+                    ADD
+                  </button>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-bordered"
+                      id="dataTable"
+                      width="100%"
+                      cellspacing="0"
+                    >
+                      <thead>
+                        <th>Sno</th>
+                        <th>Instructor</th>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Subject</th>
+                        <th>Roll No</th>
+                        <th>QR</th>
+                        <th>Item</th>
+                      </thead>
+                      <tbody id="tbody1"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2021</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!--* MODALS -------------------------------------------------------------------------------------------------------------------------->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="roll-number" class="col-form-label">Roll No</label>
+                <input type="text" class="form-control" id="roll-number" />
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="student-id" class="col-form-label"
+                  >Student ID:</label
+                >
+                <input type="text" class="form-control" id="student-id" />
+              </div>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="subject">
+                  <option selected disabled>Subject</option>
+                  <option value="Subject1">Subject1</option>
+                  <option value="Subject2">Subject2</option>
+                  <option value="Subject3">Subject3</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="instructor">
+                  <option selected disabled>Instructor</option>
+                  <option value="instructor1">instructor1</option>
+                  <option value="instructor2">instructor2</option>
+                  <option value="instructor3">instructor3</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="item">
+                  <option selected disabled>Item</option>
+                  <option value="Item1">Item1</option>
+                  <option value="Item2">Item2</option>
+                  <option value="Item3">Item3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="availability" class="col-form-label"
+                  >Availability</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="availability"
+                  disabled
+                />
+              </div>
+              <div class="form-group">
+                <label for="qrcode" class="col-form-label">QR CODE</label>
+                <input type="text" class="form-control" id="qrcode" disabled />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="inc/scripts/fireConfig.js"></script>
+    <script src="inc/scripts/crud.js"></script>
+    <script src="inc/scripts/auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script type="module">
+      let stdNo = 0;
+      let tbody = document.getElementById("tbody1");
+
+      function AddItemToTable(
+        instructor,
+        name,
+        studentID,
+        subject,
+        roll,
+        qr,
+        item
+      ) {
+        let trow = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td");
+        let td5 = document.createElement("td");
+        let td6 = document.createElement("td");
+        let td7 = document.createElement("td");
+        let td8 = document.createElement("td");
+
+        td1.setAttribute("data-toggle", "modal");
+        td1.setAttribute("data-target", "#exampleModal");
+
+        td2.setAttribute("data-toggle", "modal");
+        td2.setAttribute("data-target", "#exampleModal");
+        td2.setAttribute("class", "instructor");
+
+        td3.setAttribute("data-toggle", "modal");
+        td3.setAttribute("data-target", "#exampleModal");
+        td3.setAttribute("class", "name");
+
+        td4.setAttribute("data-toggle", "modal");
+        td4.setAttribute("data-target", "#exampleModal");
+        td4.setAttribute("class", "studentID");
+
+        td5.setAttribute("data-toggle", "modal");
+        td5.setAttribute("data-target", "#exampleModal");
+        td5.setAttribute("class", "subject");
+
+        td6.setAttribute("data-toggle", "modal");
+        td6.setAttribute("data-target", "#exampleModal");
+        td6.setAttribute("class", "roll");
+
+        td7.setAttribute("data-toggle", "modal");
+        td7.setAttribute("data-target", "#exampleModal");
+        td7.setAttribute("class", "qr");
+
+        td8.setAttribute("data-toggle", "modal");
+        td8.setAttribute("data-target", "#exampleModal");
+        td8.setAttribute("class", "item");
+
+        td1.innerHTML = ++stdNo;
+        td2.innerHTML = instructor;
+        td3.innerHTML = name;
+        td4.innerHTML = studentID;
+        td5.innerHTML = subject;
+        td6.innerHTML = roll;
+        td7.innerHTML = qr;
+        td8.innerHTML = item;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+        trow.appendChild(td5);
+        trow.appendChild(td6);
+        trow.appendChild(td7);
+        trow.appendChild(td8);
+
+        tbody.appendChild(trow);
+      }
+
+      function AddAllItemsToTable(TheStudent) {
+        stdNo = 0;
+        tbody.innerHTML = "";
+        TheStudent.forEach((element) => {
+          //console.log(element);
+          AddItemToTable(
+            element.Instructor,
+            element.Name,
+            element.StudentID,
+            element.Subject,
+            element.key,
+            element.QRCODe,
+            element.Item
+          );
+        });
+      }
+
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCIJ4zoK93DWzqs_5oT553kKPzRrHcYiNY",
+        authDomain: "iot-project-6b313.firebaseapp.com",
+        databaseURL: "https://iot-project-6b313-default-rtdb.firebaseio.com",
+        projectId: "iot-project-6b313",
+        storageBucket: "iot-project-6b313.appspot.com",
+        messagingSenderId: "495598691791",
+        appId: "1:495598691791:web:63ea03368d69cdb7029eba",
+        measurementId: "G-HGKZL3R7DW",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      function GetAllDataOnce() {
+        firebase
+          .database()
+          .ref("student/")
+          .on("value", function (snapshot) {
+            var students = [];
+            snapshot.forEach(function (childSnapshot) {
+              var key = childSnapshot.key;
+              var childData = childSnapshot.val();
+              /* console.log(key);
+              console.log(childData.Instructor); */
+              let myd = Object.assign(childData, { key });
+              /* students.push(key);
+              students.push(childData); */
+              students.push(myd);
+            });
+
+            AddAllItemsToTable(students);
+          });
+        /*  get(child(dbRef, "student")).then((snapshot) => {
+          var students = [];
+          snapshot.forEach((childSnapshot) => {
+            students.push(childSnapshot.val());
+          });
+
+          AddAllItemsToTable(students);
+        }); */
+      }
+      window.onload = GetAllDataOnce;
+    </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script src="inc/scripts/hrefscript.js"></script>
+
+    <!-- JS MODAL -->
+    <script>
+      $("#exampleModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget);
+        let instructor =
+          document.getElementsByClassName("instructor")[0].innerHTML;
+        let name = document.getElementsByClassName("name")[0].innerHTML;
+        let studentID =
+          document.getElementsByClassName("studentID")[0].innerHTML;
+        let subject = document.getElementsByClassName("subject")[0].innerHTML;
+        let roll = document.getElementsByClassName("roll")[0].innerHTML;
+        let qr = document.getElementsByClassName("qr")[0].innerHTML;
+        let item = document.getElementsByClassName("item")[0].innerHTML;
+        console.log(instructor);
+
+        var modal = $(this);
+        modal.find(".modal-body #roll-number").val(roll);
+        modal.find(".modal-body #name").val(name);
+        modal.find(".modal-body #student-id").val(studentID);
+        modal.find(".modal-body #subject").val(subject);
+        modal.find(".modal-body #instructor").val(instructor);
+        modal.find(".modal-body #item").val(item);
+        modal.find(".modal-body #qrcode").val(qr);
+      });
+    </script>
+  </body>
+</html>
